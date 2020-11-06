@@ -9,19 +9,19 @@ package vendingmachine;
  *
  * @author rmendes
  */
-public class Chocolates extends javax.swing.JFrame {
-        Produto mm = new Produto(1, "M&M's", 1.35f);
-        Produto milka = new Produto(8, "Milka", 1.65f);
-        Produto malte = new Produto(2, "Maltesers", 1.45f);
-        Produto snick = new Produto(3, "Snickers", 2.00f);
-        Produto kit = new Produto(4, "Kit-Kat", 1.75f);
-        Produto bound = new Produto(5, "Boundy", 1.15f);
-        Produto lion = new Produto(6, "Lion", 1.05f);
-        Produto tob = new Produto(7, "Toblerone", 1.15f);
+public class Bolachas extends javax.swing.JFrame {
+        Produto ahoy = new Produto(1, "Chips Ahoy", 1.35f);
+        Produto oreo = new Produto(8, "Oreo", 1.65f);
+        Produto tuc = new Produto(2, "Tuc", 1.45f);
+        Produto maria = new Produto(3, "Maria", 2.00f);
+        Produto fili = new Produto(4, "Filipinos", 1.75f);
+        Produto wafe = new Produto(5, "Wafers", 1.15f);
+        Produto dige = new Produto(6, "Digestivas", 1.05f);
+        Produto torr = new Produto(7, "Torradas", 1.15f);
     /**
      * Creates new form Chocolates
      */
-    public Chocolates() {
+    public Bolachas() {
         initComponents();
         
         //String s = Float.toString(cola.Preco);
@@ -137,56 +137,56 @@ public class Chocolates extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        kitBTN.setText("Kit-Kat");
+        kitBTN.setText("Filipinos");
         kitBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kitBTNActionPerformed(evt);
             }
         });
 
-        boundBTN.setText("Boundy");
+        boundBTN.setText("Wafers");
         boundBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boundBTNActionPerformed(evt);
             }
         });
 
-        tobBTN.setText("Toblerone");
+        tobBTN.setText("Torradas");
         tobBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tobBTNActionPerformed(evt);
             }
         });
 
-        mmBTN.setText("M&M's");
+        mmBTN.setText("Chips Ahoy");
         mmBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mmBTNActionPerformed(evt);
             }
         });
 
-        milkaBTN.setText("Milka");
+        milkaBTN.setText("Oreo");
         milkaBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 milkaBTNActionPerformed(evt);
             }
         });
 
-        maltBTN.setText("Maltesers");
+        maltBTN.setText("Tuc");
         maltBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 maltBTNActionPerformed(evt);
             }
         });
 
-        snickBTN.setText("Snickers");
+        snickBTN.setText("Maria");
         snickBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 snickBTNActionPerformed(evt);
             }
         });
 
-        lionBTN.setText("Lion");
+        lionBTN.setText("Digestivas");
         lionBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lionBTNActionPerformed(evt);
@@ -205,7 +205,7 @@ public class Chocolates extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(milkaBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(kitBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE))
+                    .addComponent(kitBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(maltBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -270,58 +270,58 @@ public class Chocolates extends javax.swing.JFrame {
     }//GEN-LAST:event_PrecoBoxActionPerformed
 
     private void lionBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lionBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lion.jpg")));
-    String s = Float.toString(lion.Preco);
-    nomeBox.setText(lion.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dige.jpg")));
+    String s = Float.toString(dige.Preco);
+    nomeBox.setText(dige.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_lionBTNActionPerformed
 
     private void maltBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maltBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/malt.jpg")));
-    String s = Float.toString(malte.Preco);
-    nomeBox.setText(malte.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tuc.jpg")));
+    String s = Float.toString(tuc.Preco);
+    nomeBox.setText(tuc.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_maltBTNActionPerformed
 
     private void mmBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mm.jpg")));
-    String s = Float.toString(mm.Preco);
-    nomeBox.setText(mm.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ahoy.jpg")));
+    String s = Float.toString(ahoy.Preco);
+    nomeBox.setText(ahoy.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_mmBTNActionPerformed
 
     private void milkaBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_milkaBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/milka.jpg")));
-    String s = Float.toString(milka.Preco);
-    nomeBox.setText(milka.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oreo.jpg")));
+    String s = Float.toString(oreo.Preco);
+    nomeBox.setText(oreo.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_milkaBTNActionPerformed
 
     private void kitBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kitBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kit.jpg")));
-    String s = Float.toString(kit.Preco);
-    nomeBox.setText(kit.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fili.jpg")));
+    String s = Float.toString(fili.Preco);
+    nomeBox.setText(fili.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_kitBTNActionPerformed
 
     private void boundBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boundBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bound.jpg")));
-    String s = Float.toString(bound.Preco);
-    nomeBox.setText(bound.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wafe.jpg")));
+    String s = Float.toString(wafe.Preco);
+    nomeBox.setText(wafe.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_boundBTNActionPerformed
 
     private void snickBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_snickBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/snick.jpg")));
-    String s = Float.toString(snick.Preco);
-    nomeBox.setText(snick.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/maria.jpg")));
+    String s = Float.toString(maria.Preco);
+    nomeBox.setText(maria.Nome);
     PrecoBox.setText(s + "€");
     }//GEN-LAST:event_snickBTNActionPerformed
 
     private void tobBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tobBTNActionPerformed
-    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tob.jpg")));
-    String s = Float.toString(tob.Preco);
-    nomeBox.setText(tob.Nome);
+    img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/torr.jpg")));
+    String s = Float.toString(torr.Preco);
+    nomeBox.setText(torr.Nome);
     PrecoBox.setText(s + "€");
     
     }//GEN-LAST:event_tobBTNActionPerformed
@@ -353,8 +353,10 @@ public class Chocolates extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Chocolates.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bolachas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+            //</editor-fold>
+            //</editor-fold>
             //</editor-fold>
             //</editor-fold>
             
@@ -363,7 +365,7 @@ public class Chocolates extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Chocolates().setVisible(true);
+            new Bolachas().setVisible(true);
         });
     }
 

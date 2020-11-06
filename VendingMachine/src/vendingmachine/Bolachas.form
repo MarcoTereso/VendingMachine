@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
@@ -27,12 +44,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="img" min="-2" max="-2" attributes="0"/>
+                      <Component id="img" min="-2" pref="225" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel1" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="jPanel2" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -74,7 +91,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="nomeBox" alignment="0" pref="356" max="32767" attributes="0"/>
+                      <Component id="nomeBox" alignment="0" pref="131" max="32767" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                           <Component id="Troco" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
@@ -170,23 +187,23 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="pepsiBTN" max="32767" attributes="0"/>
-                      <Component id="colaBTN" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lionBTN" max="32767" attributes="0"/>
+                      <Component id="mmBTN" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="iceBTN" max="32767" attributes="0"/>
-                      <Component id="nesBTN" max="32767" attributes="0"/>
+                      <Component id="milkaBTN" max="32767" attributes="0"/>
+                      <Component id="kitBTN" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="spriteBTN" max="32767" attributes="0"/>
-                      <Component id="sweBTN" max="32767" attributes="0"/>
+                      <Component id="maltBTN" max="32767" attributes="0"/>
+                      <Component id="boundBTN" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="aguaBTN" max="32767" attributes="0"/>
-                      <Component id="azeiteBTN" max="32767" attributes="0"/>
+                      <Component id="snickBTN" max="32767" attributes="0"/>
+                      <Component id="tobBTN" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -197,85 +214,85 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="colaBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="iceBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="spriteBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="aguaBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="mmBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="milkaBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="maltBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="snickBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="pepsiBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="nesBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="sweBTN" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="azeiteBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lionBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="kitBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="boundBTN" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tobBTN" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="nesBTN">
+        <Component class="javax.swing.JButton" name="kitBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nestea"/>
+            <Property name="text" type="java.lang.String" value="Filipinos"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nesBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kitBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="sweBTN">
+        <Component class="javax.swing.JButton" name="boundBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Schweppes"/>
+            <Property name="text" type="java.lang.String" value="Wafers"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sweBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boundBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="azeiteBTN">
+        <Component class="javax.swing.JButton" name="tobBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Azeite"/>
+            <Property name="text" type="java.lang.String" value="Torradas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="azeiteBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tobBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="colaBTN">
+        <Component class="javax.swing.JButton" name="mmBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cola"/>
+            <Property name="text" type="java.lang.String" value="Chips Ahoy"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="colaBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mmBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="iceBTN">
+        <Component class="javax.swing.JButton" name="milkaBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ice Tea"/>
+            <Property name="text" type="java.lang.String" value="Oreo"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="iceBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="milkaBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="spriteBTN">
+        <Component class="javax.swing.JButton" name="maltBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Sprite"/>
+            <Property name="text" type="java.lang.String" value="Tuc"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="spriteBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="maltBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="aguaBTN">
+        <Component class="javax.swing.JButton" name="snickBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#xc1;gua"/>
+            <Property name="text" type="java.lang.String" value="Maria"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aguaBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="snickBTNActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="pepsiBTN">
+        <Component class="javax.swing.JButton" name="lionBTN">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pepsi"/>
+            <Property name="text" type="java.lang.String" value="Digestivas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pepsiBTNActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lionBTNActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

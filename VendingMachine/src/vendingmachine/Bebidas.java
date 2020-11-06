@@ -59,16 +59,20 @@ public class Bebidas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mm.jpg"))); // NOI18N
+        img.setPreferredSize(new java.awt.Dimension(255, 255));
 
         nomeBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        nomeBox.setText("M&M's");
 
         jLabel3.setText("Preço:");
 
         jLabel4.setText("Inserir Dinheiro");
 
         BuyBTN.setText("Comprar");
+        BuyBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuyBTNActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Troco:");
 
@@ -86,7 +90,7 @@ public class Bebidas extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nomeBox, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                    .addComponent(nomeBox, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(Troco)
                         .addGroup(jPanel1Layout.createSequentialGroup()
@@ -225,7 +229,7 @@ public class Bebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(img)
+                        .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(26, 26, 26))
@@ -243,7 +247,7 @@ public class Bebidas extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(img))))
+                        .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         pack();
@@ -309,6 +313,16 @@ public class Bebidas extends javax.swing.JFrame {
     PrecoBox.setText(s + "€");
     
     }//GEN-LAST:event_azeiteBTNActionPerformed
+
+    private void BuyBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyBTNActionPerformed
+         String s = PrecoBox.getText();
+        String sub = s.substring(0, s.length()-1);
+        float p = Float.parseFloat(sub);
+        float i = Float.parseFloat(MoneyInput.getText());
+        float t = (i-p);   
+        String formated = String.format("%.2f", t);
+        Troco.setText(formated);
+    }//GEN-LAST:event_BuyBTNActionPerformed
 
     /**
      * @param args the command line arguments
